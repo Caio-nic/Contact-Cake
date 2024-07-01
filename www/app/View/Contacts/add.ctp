@@ -11,12 +11,16 @@ echo $this->Html->css('contact');
 		echo $this->Form->create('Contact', array('id'=>'ContactAddForm'));
 		?>
 		<div class="inputsForm">
-			<?php
+			<div class="firstInputs">
+				<?php
 				echo $this->Form->input('name', array('placeholder' => 'Name', 'id' =>'name', 'label' => false));
 				echo $this->Form->input('email', array('placeholder' => 'Email', 'id' =>'email', 'label' => false));
+				?>
+			</div>
+			<?php
 				echo $this->Form->input('message', array('placeholder' => 'Message', 'id' =>'message', 'label' => false));		
 				echo $this->Form->end('Send', array('id'=>'button')) ;
-				?>
+			?>
 		</div>
 		<!-- <?php
 			echo $form;

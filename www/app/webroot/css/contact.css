@@ -51,6 +51,11 @@ body {
   align-items: center;
   gap: 20px;
 }
+.firstInputs {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 .field-wrapper {
   display: flex;
   flex-direction: column;
